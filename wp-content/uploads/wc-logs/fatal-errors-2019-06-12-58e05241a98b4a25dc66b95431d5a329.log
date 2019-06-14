@@ -1,0 +1,76 @@
+2019-06-12T11:42:00+00:00 CRITICAL Uncaught Error: Call to a member function sendMessage() on null in C:\OSPanel\domains\wpp.loc\wp-content\plugins\new product\new-product.php:54
+Stack trace:
+#0 C:\OSPanel\domains\wpp.loc\wp-includes\class-wp-hook.php(288): send(97)
+#1 C:\OSPanel\domains\wpp.loc\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\OSPanel\domains\wpp.loc\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#3 C:\OSPanel\domains\wpp.loc\wp-includes\post.php(3951): do_action('save_post', 97, Object(WP_Post), true)
+#4 C:\OSPanel\domains\wpp.loc\wp-includes\post.php(4028): wp_insert_post(Array, false)
+#5 C:\OSPanel\domains\wpp.loc\wp-admin\includes\post.php(405): wp_update_post(Array)
+#6 C:\OSPanel\domains\wpp.loc\wp-admin\post.php(218): edit_post()
+#7 {main}
+  thrown в C:\OSPanel\domains\wpp.loc\wp-content\plugins\new product\new-product.php на строке 54
+
+2019-06-12T11:42:38+00:00 CRITICAL Uncaught Error: Call to a member function sendMessage() on null in C:\OSPanel\domains\wpp.loc\wp-content\plugins\new product\new-product.php:54
+Stack trace:
+#0 C:\OSPanel\domains\wpp.loc\wp-includes\class-wp-hook.php(288): send(97)
+#1 C:\OSPanel\domains\wpp.loc\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\OSPanel\domains\wpp.loc\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#3 C:\OSPanel\domains\wpp.loc\wp-includes\post.php(3951): do_action('save_post', 97, Object(WP_Post), true)
+#4 C:\OSPanel\domains\wpp.loc\wp-includes\post.php(4028): wp_insert_post(Array, false)
+#5 C:\OSPanel\domains\wpp.loc\wp-admin\includes\post.php(405): wp_update_post(Array)
+#6 C:\OSPanel\domains\wpp.loc\wp-admin\post.php(218): edit_post()
+#7 {main}
+  thrown в C:\OSPanel\domains\wpp.loc\wp-content\plugins\new product\new-product.php на строке 54
+
+2019-06-12T11:42:56+00:00 CRITICAL Uncaught Error: Call to a member function sendMessage() on null in C:\OSPanel\domains\wpp.loc\wp-content\plugins\new product\new-product.php:54
+Stack trace:
+#0 C:\OSPanel\domains\wpp.loc\wp-includes\class-wp-hook.php(288): send(98)
+#1 C:\OSPanel\domains\wpp.loc\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\OSPanel\domains\wpp.loc\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#3 C:\OSPanel\domains\wpp.loc\wp-includes\post.php(3951): do_action('save_post', 98, Object(WP_Post), true)
+#4 C:\OSPanel\domains\wpp.loc\wp-includes\post.php(4028): wp_insert_post(Array, false)
+#5 C:\OSPanel\domains\wpp.loc\wp-admin\includes\post.php(405): wp_update_post(Array)
+#6 C:\OSPanel\domains\wpp.loc\wp-admin\post.php(218): edit_post()
+#7 {main}
+  thrown в C:\OSPanel\domains\wpp.loc\wp-content\plugins\new product\new-product.php на строке 54
+
+2019-06-12T11:45:27+00:00 CRITICAL Uncaught Error: Call to a member function sendMessage() on null in C:\OSPanel\domains\wpp.loc\wp-content\plugins\new product\new-product.php:55
+Stack trace:
+#0 C:\OSPanel\domains\wpp.loc\wp-includes\class-wp-hook.php(288): send(98)
+#1 C:\OSPanel\domains\wpp.loc\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\OSPanel\domains\wpp.loc\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#3 C:\OSPanel\domains\wpp.loc\wp-includes\post.php(3951): do_action('save_post', 98, Object(WP_Post), true)
+#4 C:\OSPanel\domains\wpp.loc\wp-includes\post.php(4028): wp_insert_post(Array, false)
+#5 C:\OSPanel\domains\wpp.loc\wp-admin\includes\post.php(405): wp_update_post(Array)
+#6 C:\OSPanel\domains\wpp.loc\wp-admin\post.php(218): edit_post()
+#7 {main}
+  thrown в C:\OSPanel\domains\wpp.loc\wp-content\plugins\new product\new-product.php на строке 55
+
+2019-06-12T11:45:43+00:00 CRITICAL Uncaught Error: Call to a member function sendMessage() on null in C:\OSPanel\domains\wpp.loc\wp-content\plugins\new product\new-product.php:55
+Stack trace:
+#0 C:\OSPanel\domains\wpp.loc\wp-includes\class-wp-hook.php(288): send(99)
+#1 C:\OSPanel\domains\wpp.loc\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\OSPanel\domains\wpp.loc\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#3 C:\OSPanel\domains\wpp.loc\wp-includes\post.php(3951): do_action('save_post', 99, Object(WP_Post), true)
+#4 C:\OSPanel\domains\wpp.loc\wp-includes\post.php(4028): wp_insert_post(Array, false)
+#5 C:\OSPanel\domains\wpp.loc\wp-admin\includes\post.php(405): wp_update_post(Array)
+#6 C:\OSPanel\domains\wpp.loc\wp-admin\post.php(218): edit_post()
+#7 {main}
+  thrown в C:\OSPanel\domains\wpp.loc\wp-content\plugins\new product\new-product.php на строке 55
+
+2019-06-12T11:51:08+00:00 CRITICAL Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://api.telegram.org/bot857000324:AAED8gv1jOXdt5YR4PsdjBjUMeRFC7PtQU4/sendMessage?chat_id=396550640&text=%D0%94%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%B5%D0%BD+%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9+%D1%82%D0%BE%D0%B2%D0%B0%D1%80` resulted in a `400 Bad Request` response:
+{"ok":false,"error_code":400,"description":"Bad Request: chat not found"}
+ in C:\OSPanel\domains\wpp.loc\wp-content\plugins\new product\vendor\guzzlehttp\guzzle\src\Exception\RequestException.php:113
+Stack trace:
+#0 C:\OSPanel\domains\wpp.loc\wp-content\plugins\new product\vendor\guzzlehttp\guzzle\src\Middleware.php(66): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response))
+#1 C:\OSPanel\domains\wpp.loc\wp-content\plugins\new product\vendor\guzzlehttp\promises\src\Promise.php(203): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 C:\OSPanel\domains\wpp.loc\wp-content\plugins\new product\vendor\guz в C:\OSPanel\domains\wpp.loc\wp-content\plugins\new product\vendor\guzzlehttp\guzzle\src\Exception\RequestException.php на строке 113
+
+2019-06-12T11:51:33+00:00 CRITICAL Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://api.telegram.org/bot857000324:AAED8gv1jOXdt5YR4PsdjBjUMeRFC7PtQU4/sendMessage?chat_id=396550640&text=%D0%94%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%B5%D0%BD+%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9+%D1%82%D0%BE%D0%B2%D0%B0%D1%80` resulted in a `400 Bad Request` response:
+{"ok":false,"error_code":400,"description":"Bad Request: chat not found"}
+ in C:\OSPanel\domains\wpp.loc\wp-content\plugins\new product\vendor\guzzlehttp\guzzle\src\Exception\RequestException.php:113
+Stack trace:
+#0 C:\OSPanel\domains\wpp.loc\wp-content\plugins\new product\vendor\guzzlehttp\guzzle\src\Middleware.php(66): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response))
+#1 C:\OSPanel\domains\wpp.loc\wp-content\plugins\new product\vendor\guzzlehttp\promises\src\Promise.php(203): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 C:\OSPanel\domains\wpp.loc\wp-content\plugins\new product\vendor\guz в C:\OSPanel\domains\wpp.loc\wp-content\plugins\new product\vendor\guzzlehttp\guzzle\src\Exception\RequestException.php на строке 113
+
