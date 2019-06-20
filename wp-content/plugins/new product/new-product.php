@@ -11,14 +11,15 @@ include('vendor/autoload.php');
 include('TelegramBot.php');
 
 $telegramApi = new TelegramBot();
+// telegram id user
 $user_id = 334077236;
 
-
+// creating mail metabox
 add_action('add_meta_boxes', 'init');
-add_action('save_post', 'send');
+add_action('save_post', 'send', 10, 3);
 
 function init() {
-    add_meta_box('new_product','Email', 'metabox', 'product', 'side', 'high');
+    add_meta_box('new_product', 'Email', 'metabox', 'product', 'side', 'high');
 }
 
 function metabox() {
@@ -27,32 +28,33 @@ function metabox() {
     wp_nonce_field('metabox_action', 'metabox_nonce');
 }
 
-function send() {
-    // пришло ли поле с почтой?
-    if (!isset($_POST['email_product']))
+function send($post_id, $post, $update) {
+    if (!isset($_POST['email_product'])) {
         return;
+    }
 
-    // не происходит ли автосохранение?
-    if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE)
+    if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
         return;
+    }
 
-    // не ревизию ли сохраняем?
-    if (wp_is_post_revision($postID))
+    if (wp_is_post_revision($post_id)) {
         return;
+    }
 
-    // проверка достоверности запроса
+    $update = $post->post_date === $post->post_modified;
+
+    if (!$update) {
+        return;
+    }
+
+    // request validation
     check_admin_referer('metabox_action', 'metabox_nonce');
 
+    // sending letter
     $mail = $_POST['email_product'];
-
     wp_mail($mail, 'new product: ', 'goods arrived', 'content-type: text/html', '');
 
-
-
-
-    
-
     global $telegramApi, $user_id;
-
+    // sending notice
     $telegramApi->sendMessage($user_id, 'Доступен новый товар');
 }
